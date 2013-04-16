@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <title>Displaying JSON data w/ICanHaz</title>
+  <style type="text/css">
+    body {
+      background: #e1e1e1;
+    }
+
+    #wrapper {
+      width: 70%;
+      padding: 40px 5%;
+      margin: 0 auto;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+      background: #fff;
+    }
+
+    #game-list {
+      margin: 20px 0;
+    }
+
+    .game {
+      float: left;
+      margin: 0 10px 10px 0;
+    }
+
+    .game img {
+      display: block;
+      width: 150px;
+      height: auto;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>I Can Haz NES Video Games?</h1>
+
+    <button id="show-games">Let's See The Games!</button>
+
+    <!-- put all the games inside this container -->
+    <section id="game-list" class="clearfix"></section>
+  </div>
+
+  <!--
+    TODO: Create an ICanHaz template in the script tag below.
+    It should be a generic form of the following:
+
+    <div class="game">
+      <strong>Double Dragon</strong>
+      <img src="doubledragonart.jpg">
+      <span>Technos Japan - 1988</span>
+    </div>
+
+    Refer to the notes if you need help remembering how to insert placeholders.
+  -->
+
+  <script type="text/html" id="tpl_game">
+
+  </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/HenrikJoreteg/ICanHaz.js/master/ICanHaz.min.js"></script>
+  <script src="data.js"></script> <!-- this is the JSON data -->
+  <script src="games-complete.js"></script>
+</body>
+</html>
